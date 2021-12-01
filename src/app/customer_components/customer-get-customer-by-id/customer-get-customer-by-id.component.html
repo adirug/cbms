@@ -1,0 +1,50 @@
+<p>customer-get-customer-by-id works!</p>
+
+<div>
+  <h1>Get data</h1>
+  <form #postData="ngForm" (ngSubmit)="getCustomerByIdHandler(postData.value)">
+    Id : <input type="text" name="id" ngModel><br>
+    <button class="btn btn-primary">Get</button>
+  </form>
+</div>
+
+<!-- <div>
+  Id : {{customer.customerId}}
+  Name : {{customer.customerName}}
+  Account : {{customer.account}}
+  Email : {{customer.customerEmail}}
+  Address : {{customer.customerAddress}}
+  Phone : {{customer.customerPhone}}
+  Payees : {{customer.payees}}
+  Transactions : {{customer.transactions}}
+</div> -->
+
+<div class="container">
+  <hr>
+  <table class="table table-striped">
+
+    <tr>
+
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>username</th>
+
+    </tr>
+
+    <tbody>
+      <tr >
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.customerEmail}}</td>
+        <td>{{customer.customerAddress}}</td>
+        <td>{{customer.customerPhone}}</td>
+        <td>{{customer.customerUserName}}</td>
+        customer
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>

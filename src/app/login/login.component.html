@@ -1,0 +1,13 @@
+<p>login works!</p>
+
+<li> <a style="margin: 10px; font-size: large;" routerLink="/employee">Employee</a></li>
+     <li> <a style="margin: 10px; font-size: large;" routerLink="/customer">Customer</a></li>
+
+     <div>
+          <h1>login</h1>
+          <form #postData="ngForm" (ngSubmit)="loginHandler(postData.value)">
+              Username : <input type="text" name="userName" ngModel><br>
+              Password : <input type="text" name="password" ngModel><br>
+              <button class="btn btn-primary">Send</button>
+          </form>
+      </div>

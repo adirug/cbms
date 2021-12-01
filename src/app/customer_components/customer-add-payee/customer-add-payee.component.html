@@ -1,0 +1,10 @@
+<p>customer-add-payee works!</p>
+
+<div>
+    <h1>Add Payee</h1>
+    <form #postData="ngForm" (ngSubmit)="addPayeeHandler(postData.value)">
+      Payee Name : <input type="text" name="name" ngModel><br>
+      Payee Account Number : <input type="text" name="accountNumber" ngModel><br>
+      <button class="btn btn-primary">Add</button>
+    </form>
+  </div>

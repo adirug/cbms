@@ -1,0 +1,16 @@
+<p>employee-transaction works!</p>
+
+
+<div>
+    <form #editData="ngForm" (ngSubmit)="transactionHandler(editData.value)">
+  
+      Amount : <input type="number" name="amount" ngModel><br>
+      <input type="radio" name="transactionType" ngModel value="withdraw">
+      <label>Deposit</label><br>
+      <input type="radio" name="transactionType" ngModel value="deposit">
+      <label>Withdraw</label><br>
+  
+      <button class="btn btn-primary">Submit</button>
+  
+    </form>
+  </div>
